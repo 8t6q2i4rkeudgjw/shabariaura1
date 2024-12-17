@@ -537,3 +537,117 @@ nav {
 }
 
 
+/* Navigate Us Section */
+.navigate-us-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navigate-link-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.navigate-icon {
+  font-size: 24px;
+  color: #FF8C00;
+}
+
+.navigate-link {
+  font-size: 18px;
+  color: #FF8C00;
+  text-decoration: none;
+}
+
+.navigate-button {
+  padding: 12px 24px;
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+/* Default styles for larger screens (Desktop) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  padding: 40px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  .header {
+      font-size: 18px;
+      padding: 15px;
+  }
+
+  nav {
+      margin-top: 15px;
+  }
+
+  nav a {
+      margin: 0 10px;
+      font-size: 14px;
+  }
+
+  main {
+      padding: 20px 0;
+  }
+}
+
+/* Extra Small Devices (Mobile Portrait) */
+@media (max-width: 480px) {
+  .header {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  nav a {
+      display: block;
+      margin: 10px 0;
+      font-size: 12px;
+  }
+
+  main {
+      padding: 15px 0;
+  }
+}
+

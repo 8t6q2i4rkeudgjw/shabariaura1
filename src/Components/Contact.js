@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa"; // Importing Instagram and WhatsApp icons from react-icons
+import { FaInstagram, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa"; // Importing icons
 
 const Contact = () => {
   return (
@@ -16,11 +16,8 @@ const Contact = () => {
 
       {/* Instagram Section */}
       <div className="instagram-container">
-        {/* Instagram Link */}
         <div className="instagram-link-section">
-          <FaInstagram
-            style={{ fontSize: "24px", color: "#E4405F", marginRight: "8px" }}
-          />
+          <FaInstagram className="instagram-icon" />
           <a
             href="https://www.instagram.com/srishabarijewellery?igsh=N3B4cGl3bjltanZ0"
             target="_blank"
@@ -30,8 +27,6 @@ const Contact = () => {
             @shabarijewellery
           </a>
         </div>
-
-        {/* Button to Visit Instagram */}
         <button
           className="instagram-button"
           onClick={() =>
@@ -47,13 +42,10 @@ const Contact = () => {
 
       {/* WhatsApp Section */}
       <div className="whatsapp-container">
-        {/* WhatsApp Icon and Link */}
         <div className="whatsapp-link-section">
-          <FaWhatsapp
-            style={{ fontSize: "24px", color: "#25D366", marginRight: "8px" }}
-          />
+          <FaWhatsapp className="whatsapp-icon" />
           <a
-            href="https://chat.whatsapp.com/E9IExGsSyZ47UpgSp394FG" // Replace with your WhatsApp group link or personal number link
+            href="https://chat.whatsapp.com/E9IExGsSyZ47UpgSp394FG"
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-link"
@@ -61,15 +53,36 @@ const Contact = () => {
             Join Our WhatsApp Group
           </a>
         </div>
-
-        {/* Button to Redirect to WhatsApp Group */}
         <button
           className="whatsapp-button"
           onClick={() =>
-            window.open("https://chat.whatsapp.com/E9IExGsSyZ47UpgSp394FG", "_blank") // Replace with your WhatsApp link
+            window.open("https://chat.whatsapp.com/E9IExGsSyZ47UpgSp394FG", "_blank")
           }
         >
           Visit WhatsApp Group
+        </button>
+      </div>
+
+      {/* Navigate Us Section */}
+      <div className="navigate-us-container">
+        <div className="navigate-link-section">
+          <FaMapMarkerAlt className="navigate-icon" />
+          <a
+            href="https://maps.app.goo.gl/5FK2LNnx2rgxVFsu7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navigate-link"
+          >
+            Find Us on Google Maps
+          </a>
+        </div>
+        <button
+          className="navigate-button"
+          onClick={() =>
+            window.open("https://maps.app.goo.gl/5FK2LNnx2rgxVFsu7", "_blank")
+          }
+        >
+          Visit Google Maps
         </button>
       </div>
     </div>
